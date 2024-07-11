@@ -9,16 +9,18 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    padding: 0 20px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 a {
     color: white;
-
 }
 .logo {
     margin-bottom: 20px;
 }
 .logo img {
     max-width: 150px;
+    width: 100%; /* Ensure the image is responsive */
 }
 .time {
     margin-bottom: 40px;
@@ -28,12 +30,16 @@ a {
     padding: 0;
     margin: 0;
     text-align: left; /* Left align text in the middle */
+    width: 100%; /* Make the menu width 100% */
+    max-width: 300px; /* Limit the max-width of the menu */
 }
 .menu li {
     margin: 10px 0;
 }
 .menu li a {
     text-decoration: none;
+    display: block; /* Make the links block elements */
+    padding: 5px 0; /* Add padding for better touch targets on mobile */
 }
 .menu li a:hover, .menu li a:focus {
     background-color: rgb(255, 0, 0);
@@ -42,10 +48,13 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* Allow icons to wrap on small screens */
 }
 .social-media span {
     opacity: 0.6;
+    word-wrap: break-word; /* Ensure long text breaks to new lines */
 }
 .social-media img {
     margin: 0 10px;
+    max-width: 30px; /* Adjust size for better fit on small screens */
 }

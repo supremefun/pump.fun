@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+a {
+    color: white;
+
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+    max-width: 150px;
+}
+.time {
+    margin-bottom: 40px;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Left align text in the middle */
+}
+.menu li {
+    margin: 10px 0;
+}
+.menu li a {
+    text-decoration: none;
+}
+.menu li a:hover, .menu li a:focus {
+    background-color: rgb(255, 0, 0);
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-media span {
+    opacity: 0.6;
+}
+.social-media img {
+    margin: 0 10px;
+}

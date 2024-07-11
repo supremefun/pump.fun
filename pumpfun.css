@@ -49,10 +49,16 @@ a {
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap; /* Allow icons to wrap on small screens */
+    width: 100%;
+    max-width: 300px; /* Ensure it doesn't stretch too wide */
+    word-wrap: break-word; /* Ensure long text breaks to new lines */
 }
 .social-media span {
     opacity: 0.6;
     word-wrap: break-word; /* Ensure long text breaks to new lines */
+    max-width: 100%; /* Limit the width of the address */
+    overflow-wrap: break-word; /* Break long words if necessary */
+    font-size: 0.9em; /* Slightly smaller font size */
 }
 .social-media img {
     margin: 0 10px;

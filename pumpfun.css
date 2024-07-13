@@ -64,3 +64,8 @@ a {
     margin: 0 10px;
     max-width: 30px; 
 }
+
+.links img {
+    margin: 10px;
+    max-width: 100px;
+}

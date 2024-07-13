@@ -50,13 +50,26 @@ a {
     overflow-wrap: break-word; /* Break long words if necessary */
 }
 
+.various {
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Centers the elements horizontally */
+    margin-top: 20px;
+}
+
+.various span {
+    opacity: 0.6;
+    max-width: 90vw;
+    margin-top: 5px;
+}
+
 @media (max-width: 768px) {
-    .social-media span {
+    .various span {
         font-size: 3vw;
     }
 }
 @media (min-width: 769px) {
-    .social-media span {
+    .various span {
         font-size: 1em; 
     }
 }
